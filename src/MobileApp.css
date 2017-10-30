@@ -1,0 +1,10 @@
+@media screen and (max-width: 720px) {
+    .MediaLink {
+        margin-top: 5px;
+        margin-bottom: 5px;
+    }
+
+    .LinkBar {
+      margin-bottom: 30px;
+    }
+}
