@@ -5,7 +5,7 @@ const Content = () => (
   <div className="Content">
     <div className="ContentCenter">
       <Construction />
-      <h1>Under construction</h1>
+      <h1>Under construction!</h1>
       <LinkBar />
     </div>
   </div>
