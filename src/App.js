@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import './App.css';
+import './MobileApp.css';
 
 import Header from './containers/Header';
 import Content from './containers/Content';
