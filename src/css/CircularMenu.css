@@ -1,0 +1,40 @@
+.CircularMenu{
+  display: grid;
+  margin: auto;
+  height: 300px;
+  width: 300px;
+}
+
+.MenuCenter{
+  margin: auto;
+  grid-row: 1/2;
+  grid-column: 1/2;
+  position:relative;
+  height: 50px;
+  width: 50px;
+  border-radius:50px;
+  background-color: #000;
+  z-index: 2;
+  transition: all .3s ease-in-out;
+}
+
+.MenuCenter:hover {
+  transform: scale(1.5);
+}
+
+.MenuItem{
+  margin: auto;
+  grid-row: 1/2;
+  grid-column: 1/2;
+  position:relative;
+  height: 100px;
+  width: 100px;
+  border-radius:50px;
+  background-color: #000;
+  transition: all .3s ease-in-out;
+  z-index: 1;
+}
+
+.MenuItem:hover {
+  transform: scale(1.5);
+}
