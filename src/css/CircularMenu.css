@@ -36,12 +36,14 @@
   font-size: 40px;
 }
 
-.MenuCenter:hover {
-  transform: scale(1.5);
-}
+@media screen and (min-width: 480px) {
+  .MenuCenter:hover {
+    transform: scale(1.5);
+  }
 
-.MenuItem:hover {
-  transform: scale(1.5);
+  .MenuItem:hover {
+    transform: scale(1.5);
+  }
 }
 
 .MenuIcon {
