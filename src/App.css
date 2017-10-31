@@ -1,6 +1,12 @@
 @font-face {
   font-family: 'Decalotype';
-  src: local('Decalotype'), url('./Decalotype-Light.ttf') format('truetype');
+  src: url('./Decalotype-Bold.ttf');
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: 'Decalotype';
+  src: url('./Decalotype-Light.ttf');
 }
 
 html,body{
@@ -9,6 +15,10 @@ html,body{
   padding: 0;
   font-family: 'Decalotype';
   background-color: #C6A5E4;
+}
+
+h1,h2,h3,p,a{
+  font-weight:normal;
 }
 
 #root{
