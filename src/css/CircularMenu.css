@@ -1,8 +1,5 @@
 .CircularMenu{
   display: grid;
-  margin: auto;
-  height: 300px;
-  width: 300px;
 }
 
 .Node {
@@ -10,10 +7,7 @@
   grid-row: 1/2;
   grid-column: 1/2;
   position:relative;
-  border-radius:50px;
-  background-color: #000;
   transition: all .3s ease-in-out;
-  color: #C6A5E4;
   text-align: center;
 }
 
@@ -22,6 +16,9 @@
   height: 50px;
   width: 50px;
   line-height: 50px;
+  border-radius:50px;
+  background-color: #030104;
+  color: #C6A5E4;
 }
 
 .MenuItem{
@@ -44,4 +41,9 @@
 
 .MenuItem:hover {
   transform: scale(1.5);
+}
+
+.MenuIcon {
+  height: 100px;
+  width: 100px;
 }
