@@ -1,13 +1,9 @@
 import React from 'react';
-import LinkBar from '../components/LinkBar';
-import Construction from '../components/Construction';
+import Routes from './Routes';
+
 const Content = () => (
   <div className="Content">
-    <div className="ContentCenter">
-      <Construction />
-      <h1>Under construction!</h1>
-      <LinkBar />
-    </div>
+    <Routes />
   </div>
 )
 

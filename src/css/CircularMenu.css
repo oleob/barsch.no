@@ -1,0 +1,49 @@
+.CircularMenu{
+  display: grid;
+}
+
+.Node {
+  margin: auto;
+  grid-row: 1/2;
+  grid-column: 1/2;
+  position:relative;
+  transition: all .3s ease-in-out;
+  text-align: center;
+}
+
+.MenuCenter{
+  z-index: 2;
+  height: 50px;
+  width: 50px;
+  line-height: 50px;
+  border-radius:50px;
+  background-color: #030104;
+  color: #C6A5E4;
+}
+
+.MenuItem{
+  height: 100px;
+  width: 100px;
+  line-height: 100px;
+  z-index: 1;
+}
+
+.MenuCenterText{
+  margin: 0;
+  height: 100%;
+  font-weight: bold;
+  font-size: 40px;
+}
+
+.MenuCenter:hover {
+  transform: scale(1.5);
+}
+
+.MenuItem:hover {
+  transform: scale(1.5);
+}
+
+.MenuIcon {
+  height: 100px;
+  width: 100px;
+}
