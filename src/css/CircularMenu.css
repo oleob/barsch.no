@@ -5,20 +5,30 @@
   width: 300px;
 }
 
-.MenuCenter{
+.Node {
   margin: auto;
   grid-row: 1/2;
   grid-column: 1/2;
   position:relative;
-  height: 50px;
-  width: 50px;
   border-radius:50px;
   background-color: #000;
-  z-index: 2;
   transition: all .3s ease-in-out;
   color: #C6A5E4;
   text-align: center;
+}
+
+.MenuCenter{
+  z-index: 2;
+  height: 50px;
+  width: 50px;
   line-height: 50px;
+}
+
+.MenuItem{
+  height: 100px;
+  width: 100px;
+  line-height: 100px;
+  z-index: 1;
 }
 
 .MenuCenterText{
@@ -30,22 +40,6 @@
 
 .MenuCenter:hover {
   transform: scale(1.5);
-}
-
-.MenuItem{
-  margin: auto;
-  grid-row: 1/2;
-  grid-column: 1/2;
-  position:relative;
-  height: 100px;
-  width: 100px;
-  border-radius:50px;
-  background-color: #000;
-  transition: all .3s ease-in-out;
-  z-index: 1;
-  color: #C6A5E4;
-  text-align: center;
-  line-height: 100px;
 }
 
 .MenuItem:hover {

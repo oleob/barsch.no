@@ -56,12 +56,12 @@ class CircularMenu extends Component {
   render(){
     return(
         <div className="CircularMenu">
-          <div className="MenuCenter" onClick={this.toggleOpen}>
+          <div className="MenuCenter Node" onClick={this.toggleOpen}>
             <h1 className="MenuCenterText">{this.state.text}</h1>
           </div>
           {
             this.state.styles.map((style, i) =>(
-              <div key={i} className="MenuItem" style={style} >
+              <div key={i} className="MenuItem Node" style={style} >
                 <h1 className="MenuCenterText">{this.state.nodeText[i]}</h1>
               </div>
             ))
