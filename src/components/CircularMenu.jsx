@@ -9,15 +9,17 @@ class CircularMenu extends Component {
     const closedStyles= [];
     const nodeText = [];
 
-    for(let i = 0; i < props.nodeCount; i++){
+    for(let i = 0; i < props.children.length; i++){
       const openStyle = {
-        top: Math.round(props.radius*Math.cos(2*Math.PI*i/props.nodeCount)).toString() + 'px',
-        left: Math.round(props.radius*Math.sin(2*Math.PI*i/props.nodeCount)).toString() + 'px',
+        top: Math.round(props.radius*Math.cos(2*Math.PI*i/props.children.length)).toString() + 'px',
+        left: Math.round(props.radius*Math.sin(2*Math.PI*i/props.children.length)).toString() + 'px',
+        content: props.children[i],
       };
       const closedStyle = {
         top: '0px',
         left: '0px',
         transform: 'scale(0)',
+        content: props.children[i],
       };
 
       openStyles.push(openStyle);
@@ -62,7 +64,10 @@ class CircularMenu extends Component {
           {
             this.state.styles.map((style, i) =>(
               <div key={i} className="MenuItem Node" style={style} >
-                <h1 className="MenuCenterText">{this.state.nodeText[i]}</h1>
+                <div className ="NodeContent">
+                  {style.content}
+                </div>
+                {/* {<h1 className="MenuCenterText">{this.state.nodeText[i]}</h1>} */}
               </div>
             ))
           }
