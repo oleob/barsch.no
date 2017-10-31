@@ -16,6 +16,16 @@
   background-color: #000;
   z-index: 2;
   transition: all .3s ease-in-out;
+  color: #C6A5E4;
+  text-align: center;
+  line-height: 50px;
+}
+
+.MenuCenterText{
+  margin: 0;
+  height: 100%;
+  font-weight: bold;
+  font-size: 40px;
 }
 
 .MenuCenter:hover {

@@ -29,6 +29,7 @@ class CircularMenu extends Component {
       closedStyles,
       styles: closedStyles,
       open: false,
+      text: '+',
     }
 
     this.toggleOpen = this.toggleOpen.bind(this);
@@ -39,11 +40,13 @@ class CircularMenu extends Component {
       this.setState({
         open:false,
         styles: this.state.closedStyles,
+        text: '+',
       });
     } else {
       this.setState({
         open: true,
         styles: this.state.openStyles,
+        text: '-',
       });
     }
   }
@@ -51,7 +54,9 @@ class CircularMenu extends Component {
   render(){
     return(
         <div className="CircularMenu">
-          <div className="MenuCenter" onClick={this.toggleOpen}/>
+          <div className="MenuCenter" onClick={this.toggleOpen}>
+            <h1 className="MenuCenterText">{this.state.text}</h1>
+          </div>
           {
             this.state.styles.map((style, i) =>(
               <div key={i} className="MenuItem" style={style} />
