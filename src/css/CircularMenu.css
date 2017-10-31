@@ -43,6 +43,9 @@
   background-color: #000;
   transition: all .3s ease-in-out;
   z-index: 1;
+  color: #C6A5E4;
+  text-align: center;
+  line-height: 100px;
 }
 
 .MenuItem:hover {
