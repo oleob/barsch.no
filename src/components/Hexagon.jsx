@@ -9,6 +9,7 @@ const Hexagon = () => (
     <div className="Hex4 HexBall" />
     <div className="Hex5 HexBall" />
     <div className="Hex6 HexBall" />
+    <div className="EmptyHex" />
   </div>
 );
 
