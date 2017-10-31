@@ -10,9 +10,18 @@ class CircularMenu extends Component {
     const nodeText = [];
 
     for(let i = 0; i < props.children.length; i++){
+      let top = Math.round(props.radius*Math.cos(2*Math.PI*i/props.children.length)).toString() + 'px';
+      let left = Math.round(props.radius*Math.sin(2*Math.PI*i/props.children.length)).toString() + 'px';
+
+      if(window.innerWidth <= 720) {
+        top = (110 + i*110).toString() + 'px';
+        left = '0px';
+        console.log(window.innerWidth);
+      }
+
       const openStyle = {
-        top: Math.round(props.radius*Math.cos(2*Math.PI*i/props.children.length)).toString() + 'px',
-        left: Math.round(props.radius*Math.sin(2*Math.PI*i/props.children.length)).toString() + 'px',
+        top,
+        left,
         content: props.children[i],
       };
       const closedStyle = {
@@ -27,7 +36,18 @@ class CircularMenu extends Component {
       nodeText.push(i.toString());
     }
 
+    let openContainerStyle = {};
+
+    if(window.innerWidth <= 720){
+      openContainerStyle = {
+        paddingBottom: (props.children.length*110) + 'px',
+      }
+    }
+
+
     this.state = {
+      containerStyle : {},
+      openContainerStyle,
       openStyles,
       closedStyles,
       nodeText,
@@ -45,19 +65,21 @@ class CircularMenu extends Component {
         open:false,
         styles: this.state.closedStyles,
         text: '+',
+        containerStyle: {paddingBottom: '0px'},
       });
     } else {
       this.setState({
         open: true,
         styles: this.state.openStyles,
         text: '-',
+        containerStyle: this.state.openContainerStyle,
       });
     }
   }
 
   render(){
     return(
-        <div className="CircularMenu">
+        <div className="CircularMenu" style = {this.state.containerStyle}>
           <div className="MenuCenter Node" onClick={this.toggleOpen}>
             <h1 className="MenuCenterText">{this.state.text}</h1>
           </div>
