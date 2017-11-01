@@ -9,6 +9,7 @@ import Instagram from '../../icons/instagram.svg';
 import Linkedin from '../../icons/linkedin.svg';
 import Facebook from '../../icons/facebook.svg';
 import Info from '../../icons/info.svg';
+import Code from '../../icons/code.svg';
 
 const Home = () => (
   <div className="ContentCenter">
@@ -18,6 +19,7 @@ const Home = () => (
       <MenuNode link="https://www.linkedin.com/in/ole-barsch/" icon={Linkedin} />
       <MenuNode link="https://www.facebook.com/olebarsch" icon={Facebook} />
       <LocalMenuNode link="/about" icon={Info} />
+      <LocalMenuNode link="/projects" icon={Code} />
     </CircularMenu>
   </div>
 );
