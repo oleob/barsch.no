@@ -88,10 +88,10 @@ h1,h2,h3,p,a{
   text-align: center;
 }
 
-.Construction {
+.Icon {
   height: 200px;
   width: 200px;
-  animation: fadein 2s;
+  animation: fadein 1.5s;
 }
 
 .HiddenContainer {
