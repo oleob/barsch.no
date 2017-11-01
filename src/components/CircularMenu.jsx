@@ -16,7 +16,6 @@ class CircularMenu extends Component {
       if(window.innerWidth <= 720) {
         top = (110 + i*110).toString() + 'px';
         left = '0px';
-        console.log(window.innerWidth);
       }
 
       const openStyle = {
