@@ -186,3 +186,14 @@ h1,h2,h3,p,a{
 .EmptyHex {
   grid-column: 7/8;
 }
+
+.HomeButton {
+  position: absolute;
+  top: 30px;
+  left: 30px;
+}
+
+.HomeIcon {
+  height: 40px;
+  width: 40px;
+}
